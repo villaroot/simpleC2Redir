@@ -42,7 +42,7 @@ sudo apt-get install -y nginx certbot net-tools
 sudo systemctl stop nginx
 sudo certbot certonly --register-unsafely-without-email -d <www.youdomain.com>
 ```
-_Note: for certbot, enter [1] then [y] when prompted_
+_Note: for certbot, enter [1] then [y] when prompted_  
 Create your fake website in _/var/www/html_ by changing _index.html_ to your own code or use the one in the repo and change the wording a bit to make sense for your domain.
 
 Create your redirector in _/etc/nginx/sites-available_ by adding the _default_ file from the repo to replace the one there.
