@@ -1,9 +1,11 @@
 # Simple C2 Redirector Infrastructure
 Simple C2 Path Redirector with nginx to help learn the basics of C2 infrastructure.
-  
+
 Requirements:
 * (2) Ubuntu VMs in the cloud with **at least** 1 CPU and 2 GB RAM each
 * (1) Domain
+
+<img width="772" height="366" alt="image" src="https://github.com/user-attachments/assets/25eeb7de-c954-4065-889c-ce0ad9905e93" />
 
 # 1. Create VMs in Cloud
 First create two VMS in your favorite Cloud service (AWS, Azure, etc):  
@@ -39,9 +41,8 @@ sudo apt update && sudo apt upgrade
 sudo apt-get install -y nginx certbot net-tools
 sudo systemctl stop nginx
 sudo certbot certonly --register-unsafely-without-email -d <www.youdomain.com>
-Note: for certbot, enter [1] then [y] when prompted
 ```
-
+_Note: for certbot, enter [1] then [y] when prompted_
 Create your fake website in _/var/www/html_ by changing _index.html_ to your own code or use the one in the repo and change the wording a bit to make sense for your domain.
 
 Create your redirector in _/etc/nginx/sites-available_ by adding the _default_ file from the repo to replace the one there.
