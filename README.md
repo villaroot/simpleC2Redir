@@ -1,4 +1,6 @@
 # Simple C2 Redirector Infrastructure
+Step-by-step [Youtube Video](https://youtu.be/WxtQnFDBPgI)
+
 Simple C2 Path Redirector with nginx to help learn the basics of C2 infrastructure.
 
 Requirements:
